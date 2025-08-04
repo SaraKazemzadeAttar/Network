@@ -10,8 +10,6 @@ This project simulates a simple network of devices (Computers and Routers) conne
 - Handling delivery failures and sending error packets back
 - Thread-safe device state management and logging
 
----
-
 ## Features
 
 - **Device Hierarchy:** `Device` base class with `Computer` and `Router` subclasses.
@@ -21,13 +19,10 @@ This project simulates a simple network of devices (Computers and Routers) conne
 - **Thread Safety:** Devices use locks to manage concurrent state changes safely.
 - **Network Graph:** Dynamic undirected graph connecting devices.
 
----
 
 ## Installation
 
 Make sure Python 3 is installed. This project uses only standard Python libraries; no external dependencies required.
-
----
 
 ## Usage
 
@@ -36,7 +31,6 @@ Make sure Python 3 is installed. This project uses only standard Python librarie
 - Use `computer.send_packet(destination, data, algorithm)` to send packets using BFS or DFS pathfinding.
 - The system logs packet transmission steps, path discovery, and error handling.
 
----
 
 ## Example Code Snippet
 
@@ -73,7 +67,6 @@ computer1.send_packet(computer2, "Hello Again!", algorithm="DFS")
 - **Network Graph:**  
   Represented as an adjacency list dictionary connecting devices.
 
----
 
 ## Notes
 
